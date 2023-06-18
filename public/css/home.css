@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin: 0 10px;
+    height: 700px;
+    background-image: url(/img/ecommerece.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 1px 1px 12px 1px gray;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3 {
+    margin: 20px 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 7px 5px rgb(204, 204, 204);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.li {
+    list-style: none;
+    margin: 0 20px;
+    box-shadow: 1px 1px 5px 3px gray;
+}
+
+.li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.drop {
+    position: relative;
+}
+
+.down {
+    padding: 10px;
+    width: 1000px;
+    height: 450px;
+    position: absolute;
+    right: 1em;
+    top: 25px;
+    display: none;
+    background: none;
+    background-color: rgb(187, 201, 173);
+    z-index: 1;
+    border-radius: 6px;
+}
+.down-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.down-img img{
+    width: 200px;
+    height: 200px;
+    margin: 4px 10px;
+    box-shadow: 5px 5px 8px 3px gray;
+}
+
+.down-img button{
+    width: 160px;
+    height: 50px;
+    margin: 40px 10px;
+    box-shadow: 5px 5px 8px 3px gray;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    border:none;
+    background-color: rgb(155, 155, 155);
+}
+.down ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.delivery{
+    padding: 10px;
+    box-shadow: 5px 5px 8px 3px gray;
+}
+.delivery h2{
+    margin: 4px 10px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+.delivery p{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 17px;
+}
+
+
+.drop:hover .down {
+    display: block;
+}
+
+.down li {
+    list-style: none;
+}
+
+.written {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 700px;
+    top: 400px;
+    background: none;
+}
+
+.written h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.written h4 {
+    font-family: 'Rubik', sans-serif;
+    color: peachpuff;
+}
+
+.written button {
+    margin-top: 5px;
+    background-color: goldenrod;
+    font-size: 18px;
+    padding: 7px 12px;
+    border: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.written button:hover {
+    background-color: white;
+    color: goldenrod;
+    border-radius: 10px;
+}
+
+/* hero-section */
+.container {
+    margin: 10px 10px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 246, 246);
+    box-shadow: 1px 1px 12px 1px gray;
+}
+
+.hero-img img {
+    height: 650px;
+    width: 800px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 15px gray;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-text h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+/* catagories-section */
+.catagories {
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.glasses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 7px 7px 19px 2px gray;
+}
+
+.glasses:hover {
+    transform: scale(1.1);
+}
+
+.glasses img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.glasses h1 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(78, 8, 8);
+    font-weight: bold;
+}
+
+/* Latest-products */
+.latest-product {
+    margin: 80px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.latest-product h1 {
+    color: gray;
+    font-family: 'Rubik', sans-serif;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 25px 87px;
+    padding: 20px 20px;
+    border: 1.5px solid gray;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 8px gray;
+}
+.inner:hover{
+    transform: scale(1.06);
+}
+
+.product-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-details h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-details p {
+    font-family: 'Rubik', sans-serif;
+    color: goldenrod;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-details button {
+    margin-top: 2px;
+    background-color: goldenrod;
+    font-size: 17px;
+    padding: 3px 9px;
+    border: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.product-details button:hover {
+    background-color: rgb(196, 196, 196);
+    color: black;
+    border-radius: 5px;
+}
+
+
+/* signup-section */
+/* .signup-section{
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.ourr{
+    margin: 30px 10px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: steelblue;
+    box-shadow: 6px 6px 8px gray;
+}
+.login{
+    margin: 0px 200px;
+    display: flex;
+    padding: 0 15px;
+    border-right: 1.7px solid red;
+}
+.login button{
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.login button:hover{
+    box-shadow: 2px 2px 5px rgb(168, 168, 168);
+    transform: scale(1.07);
+}
+.offer{
+    margin: 0px 200px;
+    padding: 0 15px;
+    border-left: 1px solid red;
+}
+.offer h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 23px;
+    color: goldenrod
+}
+.offer h3 span{
+    color: white;
+}
+
+/* footer-section */
+.footer-section{
+    margin: 0 10px;
+    background-color: rgb(9, 29, 39);
+    font-family: 'Rubik', sans-serif;
+}
+.contt{
+    margin: 0px 200px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.navi h3{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+.navi p{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    transition: 0.4s ease-in-out;
+}
+.navi p:hover{
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Queries */
+@media screen and (max-width:1100px) {
+    .written {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 400px;
+        top: 400px;
+        background: none;
+    }
+
+    .hero-img img {
+        height: 500px;
+        width: 500px;
+        border-radius: 40px;
+    }
+
+    .glasses img {
+        width: 300px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .logo h3 {
+        margin: 20px 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        /* font-style: italic; */
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .written {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 75px;
+        top: 400px;
+        background: none;
+    }
+
+    .written h2 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Rubik', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .container {
+        margin: 30px 10px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgb(255, 246, 246);
+    }
+
+    .hero-img img {
+        height: 650px;
+        width: 400px;
+        border-radius: 40px;
+        box-shadow: 12px 12px 5px gray;
+    }
+
+    .catagories {
+        margin: 30px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
